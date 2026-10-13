@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hotel Booking</title>
+<style>
+body{font-family:Arial;text-align:center;background:#f2f2f2}
+nav{background:#222;padding:15px}
+nav a{color:white;margin:15px;text-decoration:none}
+.box{background:white;margin:20px;padding:25px}
+input,select,button{padding:9px;margin:5px}
+table{margin:auto;border-collapse:collapse}
+th,td{border:1px solid;padding:8px}
+th{background:#333;color:white}
+</style>
+</head>
+
+<body>
+
+<h1>🏨 Online Hotel Booking</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Rooms</a>
+<a href="#">Login</a>
+<a href="#">My Bookings</a>
+<a href="#">Admin</a>
+<a href="#">Contact</a>
+</nav>
+
+<div class="box">
+<h2>Search Hotel</h2>
+<input placeholder="Destination">
+<input type="date">
+<input type="date">
+<input type="number" placeholder="Guests">
+<button>Search</button>
+</div>
+
+<div class="box">
+<h2>Room Types</h2>
+<table>
+<tr><th>Room</th><th>Price</th><th>Availability</th><th>Action</th></tr>
+<tr><td>Single</td><td>₹1500</td><td>Available</td><td><button>Book</button></td></tr>
+<tr><td>Double</td><td>₹2500</td><td>Available</td><td><button>Book</button></td></tr>
+<tr><td>Deluxe</td><td>₹3500</td><td>Available</td><td><button>Book</button></td></tr>
+<tr><td>Suite</td><td>₹5000</td><td>Available</td><td><button>Book</button></td></tr>
+</table>
+</div>
+
+<div class="box">
+<h2>Booking</h2>
+<input placeholder="Name">
+<input type="email" placeholder="Email">
+<input type="date">
+<select>
+<option>Select Room</option>
+<option>Single</option>
+<option>Double</option>
+<option>Deluxe</option>
+<option>Suite</option>
+</select>
+<button>Confirm Booking</button>
+</div>
+
+<div class="box">
+<h2>Login / Register</h2>
+<input placeholder="Email">
+<input type="password" placeholder="Password">
+<button>Login</button>
+<button>Register</button>
+</div>
+
+<div class="box">
+<h2>My Bookings</h2>
+<p>Room: Deluxe | Date: 10-10-2026</p>
+<button>Modify</button>
+<button>Cancel</button>
+</div>
+
+<div class="box">
+<h2>Admin Panel</h2>
+<button>Manage Rooms</button>
+<button>Update Price</button>
+<button>Manage Bookings</button>
+<button>Manage Users</button>
+</div>
+
+<div class="box">
+<h2>About & Contact</h2>
+<p>Comfortable rooms with Wi-Fi, AC, Food and Parking.</p>
+<p>Email: hotel@gmail.com | Phone: 9876543210</p>
+<h3>Customer Service Q&A</h3>
+<p>Check-in: 12 PM | Check-out: 11 AM</p>
+<p>Free cancellation is available 3 days before arrival.</p>
+<h3>Privacy Policy</h3>
+<p>Your personal information is kept secure.</p>
+</div>
+
+</body>
+</html>
