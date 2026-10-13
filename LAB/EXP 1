@@ -1,0 +1,95 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Library Management System</title>
+<style>
+body{font-family:Arial;background:#f2f2f2;text-align:center}
+nav{background:#222;padding:15px}
+nav a{color:white;margin:10px;text-decoration:none}
+div{background:white;margin:20px;padding:20px}
+input,select,button{padding:8px;margin:5px}
+table{margin:auto;border-collapse:collapse}
+th,td{border:1px solid black;padding:8px}
+th{background:#333;color:white}
+</style>
+</head>
+
+<body>
+
+<h1>📚 Library Management System</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#books">Books</a>
+<a href="#login">Login</a>
+<a href="#admin">Admin</a>
+<a href="#user">User</a>
+</nav>
+
+<div id="books">
+<h2>Book Catalog</h2>
+<input type="text" placeholder="Search Book">
+<button>Search</button>
+
+<table>
+<tr><th>Book</th><th>Author</th><th>Status</th></tr>
+<tr><td>Java</td><td>James</td><td>Available</td></tr>
+<tr><td>Python</td><td>Mark</td><td>Issued</td></tr>
+</table>
+</div>
+
+<div id="login">
+<h2>Login</h2>
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+<button>Login</button>
+</div>
+
+<div id="admin">
+<h2>Librarian Admin</h2>
+<button>Add Book</button>
+<button>Update Book</button>
+<button>Delete Book</button>
+<button>Issue Book</button>
+<button>Return Book</button>
+<button>Make Fine</button>
+</div>
+
+<div id="user">
+<h2>User Account</h2>
+<p>Borrow History: Java - Issued</p>
+<p>Issue Date: 01-10-2026</p>
+<p>Expected Date: 15-10-2026</p>
+<p>Fine: ₹50</p>
+<button>My Profile</button>
+</div>
+
+<div>
+<h2>Study Material</h2>
+<select>
+<option>1st Year</option>
+<option>2nd Year</option>
+<option>3rd Year</option>
+<option>4th Year</option>
+</select>
+
+<select>
+<option>Semester 1</option>
+<option>Semester 2</option>
+</select>
+
+<button>Search</button>
+<button>Download</button>
+</div>
+
+<div>
+<h2>Contact Us</h2>
+<input type="text" placeholder="Name">
+<input type="email" placeholder="Email">
+<button>Send</button>
+</div>
+
+</body>
+</html>
+```
