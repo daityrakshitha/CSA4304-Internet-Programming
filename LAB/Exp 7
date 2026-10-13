@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MedCare Hospital Appointment System</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #e8f5e9;
+        }
+
+        header {
+            background-color: #00897b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #00695c;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 85%;
+            margin: 20px auto;
+        }
+
+        .box {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #00897b;
+        }
+
+        input, select, textarea {
+            width: 95%;
+            padding: 10px;
+            margin: 7px 0 15px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #00897b;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #aaa;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #80cbc4;
+        }
+
+        footer {
+            background-color: #00695c;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>MedCare Hospital</h1>
+    <p>Online Hospital Appointment Booking System</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Hospitals</a>
+    <a href="#">Doctors</a>
+    <a href="#">Appointments</a>
+    <a href="#">Login</a>
+</nav>
+
+<div class="container">
+
+    <!-- Search Module -->
+    <div class="box">
+        <h2>Search Hospital and Doctor</h2>
+
+        <label>Location:</label>
+        <select>
+            <option>Chennai</option>
+            <option>Bangalore</option>
+            <option>Hyderabad</option>
+            <option>Coimbatore</option>
+        </select>
+
+        <label>Doctor Specialty:</label>
+        <select>
+            <option>Cardiology</option>
+            <option>Dermatology</option>
+            <option>Neurology</option>
+            <option>Orthopedics</option>
+            <option>General Medicine</option>
+        </select>
+
+        <button type="button">Search</button>
+    </div>
+
+
+    <!-- Hospital Details -->
+    <div class="box">
+        <h2>Hospital List</h2>
+
+        <table>
+            <tr>
+                <th>Hospital</th>
+                <th>Location</th>
+                <th>Specialty</th>
+            </tr>
+
+            <tr>
+                <td>MedCare Hospital</td>
+                <td>Chennai</td>
+                <td>Multi-Specialty</td>
+            </tr>
+
+            <tr>
+                <td>City Health Hospital</td>
+                <td>Coimbatore</td>
+                <td>General Medicine</td>
+            </tr>
+
+            <tr>
+                <td>Global Care Hospital</td>
+                <td>Bangalore</td>
+                <td>Cardiology</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- Patient Registration -->
+    <div class="box">
+        <h2>Patient Registration</h2>
+
+        <form>
+            <label>Patient Name:</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter email">
+
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="Enter phone number">
+
+            <label>Password:</label>
+            <input type="password" placeholder="Enter password">
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+
+    <!-- Appointment Booking -->
+    <div class="box">
+        <h2>Book Appointment</h2>
+
+        <form>
+
+            <label>Patient Name:</label>
+            <input type="text" placeholder="Enter patient name">
+
+            <label>Select Hospital:</label>
+            <select>
+                <option>MedCare Hospital</option>
+                <option>City Health Hospital</option>
+                <option>Global Care Hospital</option>
+            </select>
+
+            <label>Select Doctor:</label>
+            <select>
+                <option>Dr. Ravi - Cardiologist</option>
+                <option>Dr. Priya - Dermatologist</option>
+                <option>Dr. Arun - Neurologist</option>
+                <option>Dr. Meena - Orthopedic</option>
+            </select>
+
+            <label>Select Date:</label>
+            <input type="date">
+
+            <label>Select Time:</label>
+            <input type="time">
+
+            <button type="submit">Book Appointment</button>
+
+        </form>
+    </div>
+
+
+    <!-- Check-in Form -->
+    <div class="box">
+        <h2>Patient Check-in Form</h2>
+
+        <form>
+
+            <label>Patient Name:</label>
+            <input type="text">
+
+            <label>Appointment ID:</label>
+            <input type="text">
+
+            <label>Symptoms:</label>
+            <textarea rows="4"
+                placeholder="Enter your symptoms"></textarea>
+
+            <button type="submit">Submit Check-in</button>
+
+        </form>
+    </div>
+
+
+    <!-- Appointment Status -->
+    <div class="box">
+        <h2>Appointment Status</h2>
+
+        <table>
+            <tr>
+                <th>Appointment ID</th>
+                <th>Doctor</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>A101</td>
+                <td>Dr. Ravi</td>
+                <td>15-10-2026</td>
+                <td>10:00 AM</td>
+                <td>Confirmed</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- Past Appointments -->
+    <div class="box">
+        <h2>Past Appointments</h2>
+
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Doctor</th>
+                <th>Specialty</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>10-09-2026</td>
+                <td>Dr. Priya</td>
+                <td>Dermatology</td>
+                <td>Completed</td>
+            </tr>
+
+            <tr>
+                <td>20-08-2026</td>
+                <td>Dr. Ravi</td>
+                <td>Cardiology</td>
+                <td>Completed</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- Doctor Rating -->
+    <div class="box">
+        <h2>Doctor Rating & Review</h2>
+
+        <form>
+            <label>Doctor:</label>
+            <select>
+                <option>Dr. Ravi</option>
+                <option>Dr. Priya</option>
+                <option>Dr. Arun</option>
+            </select>
+
+            <label>Rating:</label>
+            <select>
+                <option>5 - Excellent</option>
+                <option>4 - Very Good</option>
+                <option>3 - Good</option>
+                <option>2 - Average</option>
+                <option>1 - Poor</option>
+            </select>
+
+            <label>Review:</label>
+            <textarea rows="4"
+                placeholder="Write your review"></textarea>
+
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+
+
+    <!-- Hospital Details -->
+    <div class="box">
+        <h2>Hospital Details</h2>
+
+        <p><b>Hospital Name:</b> MedCare Hospital</p>
+        <p><b>Address:</b> Chennai, Tamil Nadu</p>
+        <p><b>Phone:</b> 9876543210</p>
+        <p><b>Email:</b> medcare@example.com</p>
+
+        <button type="button">View Google Map</button>
+    </div>
+
+
+    <!-- Admin -->
+    <div class="box">
+        <h2>Admin Panel</h2>
+
+        <ul>
+            <li>Manage Appointments</li>
+            <li>Manage Doctors</li>
+            <li>Manage Hospitals</li>
+            <li>View Appointment Statistics</li>
+            <li>View Patient Reviews</li>
+            <li>Update Hospital Details</li>
+            <li>Update Hospital Location</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 MedCare Hospital | Online Appointment System</p>
+</footer>
+
+</body>
+</html>
