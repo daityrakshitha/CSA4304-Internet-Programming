@@ -1,0 +1,51 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cake Ordering System</title>
+<style>
+body{text-align:center;font-family:Arial;background:#fff0f5}
+.box{width:350px;margin:30px auto;padding:20px;background:white}
+input,select{width:90%;padding:8px;margin:6px}
+input[type=submit]{background:#e91e63;color:white;border:0}
+.result{margin-top:15px;background:#ffe4ec;padding:10px;text-align:left}
+</style>
+</head>
+
+<body>
+<div class="box">
+<h2>Online Cake Ordering</h2>
+
+<form>
+<input type="text" placeholder="Customer Name">
+<select>
+<option>Chocolate Cake</option>
+<option>Vanilla Cake</option>
+<option>Strawberry Cake</option>
+</select>
+
+<select>
+<option>Birthday</option>
+<option>Wedding</option>
+<option>Anniversary</option>
+</select>
+
+<input type="number" placeholder="Quantity">
+<input type="text" placeholder="Delivery Address">
+<input type="submit" value="Place Order">
+</form>
+
+<div class="result">
+<b>Order Details</b><br>
+Cake: Chocolate Cake<br>
+Category: Birthday<br>
+Quantity: 1<br>
+Price: ₹600<br>
+Delivery: Chennai<br>
+Status: Order Confirmed
+</div>
+
+</div>
+</body>
+</html>
+```
